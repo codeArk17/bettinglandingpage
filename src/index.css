@@ -1,0 +1,108 @@
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0a0a0a;
+  color: #fff;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+#root {
+  width: 100%;
+  min-height: 100dvh;
+  background: #0a0a0a;
+}
+
+h1, h2, h3 { margin: 0; }
+p           { margin: 0; }
+ul          { margin: 0; padding: 0; list-style: none; }
+a           { text-decoration: none; }
+button      { font-family: inherit; }
+img         { display: block; max-width: 100%; }
+
+/* ── Centered content wrapper ── */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Global utility ── */
+.gold { color: #d4a017; }
+
+/* ── Shared section header ── */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d4a017 50%, transparent);
+  display: block;
+}
+
+/* ── Shared CTA / button ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: filter 0.2s, transform 0.15s;
+  letter-spacing: 0.5px;
+}
+
+.btn:hover  { filter: brightness(1.1); transform: translateY(-2px); }
+.btn:active { transform: translateY(0); filter: brightness(0.95); }
+
+.btn--wa {
+  background: linear-gradient(135deg, #25d366, #1db854);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+}
+
+.btn--lg {
+  font-size: 14px;
+  padding: 15px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* ── Scroll reveal animation ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

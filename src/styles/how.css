@@ -1,0 +1,116 @@
+.how {
+  width: 100%;
+  padding: 60px 0;
+  background: #0a0a0a;
+}
+
+.how__steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.how__step-wrap {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.how__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  flex: 1;
+}
+
+.how__step-num {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d4a017, #b8860b);
+  color: #000;
+  font-size: 12px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 14px rgba(212, 160, 23, 0.4);
+}
+
+.how__step-icon {
+  color: #d4a017;
+  background: #161616;
+  border: 1px solid #2a2a2a;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s;
+}
+
+.how__step:hover .how__step-icon {
+  border-color: #d4a017;
+}
+
+.how__step-title {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.how__step-desc {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+  max-width: 140px;
+  margin: 0;
+}
+
+/* Dotted connector between steps */
+.how__connector {
+  display: flex;
+  gap: 5px;
+  padding-bottom: 42px;
+  flex-shrink: 0;
+  margin: 0 4px;
+}
+
+.how__connector span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #d4a017;
+  opacity: 0.45;
+}
+
+@media (max-width: 768px) {
+  .how { padding: 40px 0; }
+
+  .how__steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .how__step-wrap {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .how__connector {
+    flex-direction: column;
+    padding-bottom: 0;
+    margin: 4px 0;
+    gap: 3px;
+  }
+
+  .how__step-desc {
+    max-width: 240px;
+  }
+}
