@@ -77,7 +77,7 @@ export default function Hero() {
 
           <p className="hero__eyebrow hero__a hero__a1">
             <ShieldCheck size={13} strokeWidth={2.5} />
-            South Africa's #1 Betting Community
+            South Africa Trusted Betting Community
           </p>
 
           <h1 className="hero__heading hero__a hero__a2">

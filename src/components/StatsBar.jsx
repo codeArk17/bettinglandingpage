@@ -3,7 +3,7 @@ import '../styles/statsbar.css';
 
 const stats = [
   { Icon: Users,         value: '12,000+', label: 'Active Members' },
-  { Icon: TrendingUp,    value: '85%',     label: 'Win Rate Tips' },
+  { Icon: TrendingUp,    value: '85%',     label: 'Expert Analysis' },
   { Icon: MessageCircle, value: '24/7',    label: 'Group Activity' },
   { Icon: Award,         value: '3+ Yrs',  label: 'Trusted Community' },
 ];

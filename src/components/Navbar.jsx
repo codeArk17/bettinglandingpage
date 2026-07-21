@@ -6,7 +6,6 @@ import '../styles/navbar.css';
 import { SITE_NAME, TAGLINE, WHATSAPP_LINK } from '../constants';
 
 const NAV_LINKS = [
-  { label: 'What We Cover', href: '#gallery' },
   { label: 'Why BetMaster', href: '#why' },
   { label: 'How It Works', href: '#how' },
 ];
